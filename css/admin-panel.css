@@ -1,0 +1,152 @@
+@font-face {
+    font-family: '21Cent';
+    src: url("../fonts/21Cent/21Cent.otf") format("opentype");
+}
+@font-face {
+    font-family: BlissPro;
+    src: url("../fonts/BlissPro/BlissPro-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: BlissPro;
+    src: url("../fonts/BlissPro/BlissPro-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+div {
+    box-sizing: border-box;
+}
+body {
+    background-color: #dfe0e0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+.header-container, .editor-container {
+    display: flex;
+    align-items: flex-start;
+}
+.editor-container {
+    padding-top: 30px;
+}
+.header-container__logo, .category-tree {
+    width: 26.8966%;
+    height: auto;
+}
+.category-tree {
+    overflow: hidden;
+}
+.title, .editor {
+    width: 73%;
+    padding-left: 50px;
+}
+
+.title {
+    padding-top: 11px;
+}
+.title__main {
+    font-size: 24px;
+    font-family: '21Cent', Helvetica, Verdana, Sans-Serif;
+    color: #34495e;
+    margin: 0 0 7px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .05em;
+}
+.title__sub {
+    font-family: BlissPro, Helvetica, Verdana, Sans-Serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: .05em;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.btn-group__button:hover {
+    cursor: pointer;
+}
+.btn-group__button:active {
+    box-shadow: none;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.btn-group__button {
+    margin-bottom: 6px;
+    height: 40px;
+    width: 203px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-family: BlissPro, Helvetica, Verdana, Sans-Serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: box-shadow 0.1s, margin-top 0.1s;
+}
+.btn-group__button--green {
+    background-color: #159b81;
+    box-shadow: 0px 6px 0px 0px #085a4a;
+}
+.btn-group__button--blue {
+    width: 351px;
+    background-color: #3c6188;
+    box-shadow: 0px 6px 0px 0px #1f364e;
+}
+.btn-group__button--red {
+    background-color: #985353;
+    box-shadow: 0px 6px 0px 0px #662626;
+}
+
+/*jstree*/
+
+.jstree-anchor {
+    font-family: BlissPro, Helvetica, Verdana, Sans-Serif;
+    font-size: 14px;
+}
+li[aria-level="1"]>.jstree-anchor {
+    font-size: 18px;
+    color: #555555;
+}
+li[aria-level="2"]>.jstree-anchor {
+    font-size: 16px;
+}
+.jstree-default>.jstree-no-dots .jstree-closed>.jstree-ocl,
+.jstree-default>.jstree-no-dots .jstree-open>.jstree-ocl {
+    background-image: url(../images/spritesheet.png);
+    width: 22px;
+}
+.jstree-default>.jstree-no-dots .jstree-closed>.jstree-ocl {
+    background-position: -68px 3px;
+}
+.jstree-default>.jstree-no-dots .jstree-open>.jstree-ocl {
+    background-position: 2px -1px;
+}
+.jstree-default>.jstree-no-dots .jstree-closed[aria-level="1"]>.jstree-ocl {
+    background-position: -44px 3px;
+}
+.jstree-default>.jstree-no-dots .jstree-open[aria-level="1"]>.jstree-ocl {
+    background-position: -106px -1px;
+}
+.jstree-default>.jstree-container-ul .jstree-node  {
+    margin-top: 6px;
+}
+.jstree-default>.jstree-container-ul>.jstree-node:first-child {
+    margin-top: 0;
+}
+.jstree-anchor.selected-path {
+    color: #2c64a4;
+}
+.jstree-open[aria-level="1"]>.jstree-anchor.selected-path {
+    color: #11589f;
+}
+.jstree-default>.jstree-no-dots .jstree-open>.jstree-ocl.selected-path-icon {
+    background-position: -88px -1px;
+}
+.jstree-default>.jstree-no-dots .jstree-closed>.jstree-ocl.selected-path-icon {
+    background-position: -20px 3px;
+}

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: '21Cent';
+    src: url("../fonts/21Cent/21Cent.otf") format("opentype");
+}
+@font-face {
+    font-family: BlissPro;
+    src: url("../fonts/BlissPro/BlissPro-Regular.otf") format("opentype");
+}
+/*@font-face {*/
+/*    font-family: BlissPro;*/
+/*    src: url("../fonts/BlissPro/BlissPro-Bold.otf") format("opentype");*/
+/*    font-weight: bold;*/
+/*}*/
+@font-face {
+    font-family: BlissPro;
+    src: url("../fonts/BlissPro/BlissPro-Heavy.otf") format("opentype");
+    font-weight: 900;
+}
+@font-face {
+    font-family: BlissPro;
+    src: url("../fonts/BlissPro/BlissPro-Light.otf") format("opentype");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: BlissPro;
+    src: url("../fonts/BlissPro/BlissPro-LightItalic.otf") format("opentype");
+    font-style: italic;
+    font-weight: lighter;
+}
+/*content page*/
+.content-header {
+    padding: 6px 149px 15px 149px;
+    background-color: #dfe0e0;
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.43);
+}
+.content-header__title, .content-header__subtitle {
+    font-size: 48px;
+    font-family: '21Cent', Helvetica, Verdana, Sans-Serif;
+    color: #34495e;
+    margin: 0;
+    font-weight: normal;
+}
+.content-header__icon {
+    float: left;
+    margin-right: 32px;
+    margin-top: 21px;
+}
+.content-header__subtitle { 
+    font-size: 36px;
+}
+.content-container {
+    margin-top: 45px;
+    padding: 0 149px;
+    background-color: white;
+    font-size: 24px;
+    font-family: BlissPro, Helvetica, Verdana, Sans-Serif;
+    font-weight: lighter;
+    line-height: 36px;
+}
+.content-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+    font-family: BlissPro, Helvetica, Verdana, Sans-Serif;
+    letter-spacing: .1em;
+    margin: 8px 0;
+}
+
+.content-container h2 {
+    margin: 0;
+    color: #34495e;
+    font-family: BlissPro, Helvetica, Verdana, Sans-Serif;
+    font-weight: lighter;
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: .05em;
+}
